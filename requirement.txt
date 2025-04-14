@@ -1,0 +1,8 @@
+streamlit
+mysql-connector-python
+python-dotenv
+pandas
+openpyxl
+groq
+Pillow
+spacy
