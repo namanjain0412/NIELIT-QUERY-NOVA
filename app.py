@@ -153,14 +153,50 @@ def construct_sql_from_entities_and_actions(entities, actions, schema):
 st.set_page_config(page_title="Nielit QueryNova", page_icon="✨", layout="wide")
 st.markdown("""
     <style>
-        body { background-color: #f4f4f4; color: #333; }
-        .stButton>button { background-color: #0056b3; color: white; border-radius: 10px; font-size: 18px; transition: 0.3s; }
-        .stButton>button:hover { background-color: #003d80; }
-        .stTextInput>div>div>input { font-size: 18px; padding: 10px; }
-        .stCode { font-size: 16px; }
-        .heading { text-align: center; font-size: 36px; font-weight: bold; }
-        .subheading { text-align: center; font-size: 24px; color: #007BFF; font-weight: bold; }
+        .stApp {
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .heading {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: #0a3d62;
+        }
+        .subheading {
+            text-align: center;
+            font-size: 22px;
+            color: #0984e3;
+            font-weight: 600;
+        }
+        .stButton > button {
+            background-color: #0984e3;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+        .stButton > button:hover {
+            background-color: #0652DD;
+        }
+        .stTextInput > div > div > input {
+            font-size: 18px;
+            padding: 10px;
+        }
+        footer { visibility: hidden; }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #dfe6e9;
+            text-align: center;
+            font-size: 14px;
+            color: #636e72;
+        }
     </style>
+    <div class="footer">🔧 Developed by <strong>Naman Jain</strong> | © 2025 All Rights Reserved</div>
 """, unsafe_allow_html=True)
 
 
